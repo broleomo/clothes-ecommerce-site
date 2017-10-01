@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import '../styles/App.css';
 
+import {Link} from 'react-router-dom';
+
 import { Breadcrumb, BreadcrumbItem, Container, Row, Col, Card, CardImg, CardText, CardBlock, CardTitle, CardSubtitle, Button, FormGroup, Label, Input } from 'reactstrap';
 
 export default class Badge extends Component {
@@ -9,7 +11,7 @@ export default class Badge extends Component {
       <div className='container'>
         <div className='breadcrumbs'>
           <Breadcrumb>
-            <BreadcrumbItem><a href="#">Shop</a></BreadcrumbItem>
+            <BreadcrumbItem><Link to='/shop'>Shop</Link></BreadcrumbItem>
             <BreadcrumbItem active>Badge Name</BreadcrumbItem>
           </Breadcrumb>
         </div>
@@ -39,7 +41,7 @@ export default class Badge extends Component {
                       </Input>
                   </FormGroup>
                   <CardText>Badge 1 description. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</CardText>
-                  <Button style={{backgroundColor:'#F90093',color:'white',border:'none'}}> Add to Cart!</Button>
+                  <Button style={{backgroundColor:'#F90093',border:'none'}}><Link to='/cart' style={{color:'white'}}> Add to Cart!</Link></Button>
               </CardBlock>
             </Card>
         </div>
