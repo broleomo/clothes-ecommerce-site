@@ -6,21 +6,36 @@
 }
 
 .home-header {
-  background-image: url("./images/iron-glory-background.jpg");
+  background-image: url("./images/walking_image.jpg");
   height: 400px;
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.home-header h1 p {
-  color: #464547;
-  text-transform: uppercase;
+  justify-content: flex-end;
+  color: white;
 }
 
 .header-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #A3E2DB;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.thankyou-page {
+  background-color:'#45CCBC';
+  color:'white';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }

@@ -10,22 +10,25 @@ import registerServiceWorker from './registerServiceWorker';
 
 import BaseLayout from './components/BaseLayout';
 import Home from './components/Home';
-import Shop from './components/Shop';
-import Badge from './components/Badge';
-import Login from './components/Login';
-import Cart from './components/Cart';
+import Shoes from './components/Shoes';
+import Shirts from './components/Shirts';
+import Hats from './components/Hats';
+
+import About from './components/About';
 import Contact from './components/Contact';
+import ThankYou from './components/ThankYou';
 
 ReactDOM.render(
   <BrowserRouter>
     <BaseLayout>
       <Switch>
         <Route exact path='/' component={Home}/>
-        <Route path='/shop' component={Shop}/>
-        <Route path='/badge' component={Badge}/>
-        <Route path='/login' component={Login}/>
-        <Route path='/cart' component={Cart}/>
+        <Route path='/shop-shoes' component={Shoes}/>
+        <Route path='/shop-shirts' component={Shirts}/>
+        <Route path='/shop-hats' component={Hats}/>
+        <Route path='/about' component={About}/>
         <Route path='/contact' component={Contact}/>
+        <Route path='/thankyou' component={ThankYou}/>
       </Switch>
     </BaseLayout>
   </BrowserRouter>

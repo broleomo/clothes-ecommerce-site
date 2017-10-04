@@ -21,9 +21,9 @@ export default class Contact extends Component {
           <FormGroup>
             <Label for="exampleText">Leave a comment</Label>
             <Input type="textarea" name="text" id="exampleText" placeholder="Comment..."/>
-        
+
           </FormGroup>
-          <Link to="/thankyou"><Button style={{backgroundColor:'#F90093',color:'white',border:'none'}}>Submit</Button></Link>
+          <Link to="/thankyou"><Button style={{backgroundColor:'#45CCBC',color:'white',border:'none'}}>Submit</Button></Link>
         </Form>
       </div>
     )

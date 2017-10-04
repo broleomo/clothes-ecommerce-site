@@ -10,9 +10,9 @@ export default class Home extends Component {
       <div className='container'>
         <div className='home-header'>
           <div className='header-text'>
-          <h1> Badge it up! </h1>
-          <p> Cronut migas kickstarter venmo hashtag portland normcore street art vinyl lomo direct trade. </p>
-          <Button style={{backgroundColor:'#F90093',width:'20%',border:'none'}}><Link to='/shop' style={{color: 'white'}}> Shop Now!</Link></Button>
+          <h1> Cool Clothes, Inc. </h1>
+          <p> Check out how cool we are. This could be you. </p>
+          <Button style={{backgroundColor:'#45CCBC',width:'45%',border:'none'}}><Link to='/shop-shirts' style={{color: 'white'}}> Shop Fall Shirts!</Link></Button>
           </div>
         </div>
 
