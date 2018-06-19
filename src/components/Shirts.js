@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import '../styles/App.css';
 
 import {Link} from 'react-router-dom';
-import { Jumbotron, Card, CardImg, CardText, CardBlock,
-  CardTitle, CardSubtitle, Container, Col, Row, Button } from 'reactstrap';
+import { Card, CardBlock,
+  CardTitle, CardSubtitle, Container, Col, Row } from 'reactstrap';
 
 export default class Shirts extends Component {
   render(){
@@ -12,7 +12,7 @@ export default class Shirts extends Component {
         <Container>
           <Row>
           <Col md='6' lg='4'>
-              <Link to="/shop-shirts">
+              <Link to="/shop-shirts/shirt-info">
               <Card style={{margin:'15px', padding:'10px'}}>
                 <img src="shirts.jpg" width="100%"  alt="image" />
                 <CardBlock>

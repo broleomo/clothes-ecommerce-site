@@ -17,23 +17,24 @@ import Hats from './components/Hats';
 import About from './components/About';
 import Contact from './components/Contact';
 import ThankYou from './components/ThankYou';
+import ShirtInfo from './components/ShirtInfo';
 
 ReactDOM.render(
   <BrowserRouter>
     <BaseLayout>
       <Switch>
         <Route exact path='/' component={Home}/>
-        <Route path='/shop-shoes' component={Shoes}/>
+        <Route path='/shop-shirts/shirt-info' component={ShirtInfo} />
         <Route path='/shop-shirts' component={Shirts}/>
+        <Route path='/shop-shoes' component={Shoes}/>
         <Route path='/shop-hats' component={Hats}/>
         <Route path='/about' component={About}/>
         <Route path='/contact' component={Contact}/>
         <Route path='/thankyou' component={ThankYou}/>
+        
       </Switch>
     </BaseLayout>
   </BrowserRouter>
-
-
   ,
 
   document.getElementById('root'));
