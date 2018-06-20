@@ -9,7 +9,7 @@ export default class Contact extends Component {
   render(){
     return(
       <div>
-      <Form style={{backgroundColor:'white', padding:'10px', marginTop:'10px', borderRadius:'0.3rem'}}>
+      <Form style={{fontFamily: 'Shadows Into Light', cursivebackgroundColor:'white', padding:'10px', marginTop:'10px', borderRadius:'0.3rem'}}>
           <FormGroup>
             <Label for="examplePassword">Name</Label>
             <Input type="text" name="name" id="examplePassword" placeholder="Name" />

@@ -12,28 +12,28 @@ export default class BaseLayout extends Component {
   render(){
     return(
       <div className="container">
-        <div className="top-nav-container">
+        <div>
           <Navbar className="nav-bar" light toggleable>
                   <NavbarToggler right />
-                  <NavbarBrand href="/">
-                  </NavbarBrand>
+                  <NavLink className="nav-bar" style={{color:'#464547'}} to="/">Home
+                  </NavLink>
                   <Collapse navbar>
                     <Nav className="ml-auto" navbar>
                       <NavItem>
-                      <NavLink to='/shop-shoes' activeClassName="selected" style={{color:'#464547'}}>Shoes</NavLink>
+                      <NavLink to='/shop-shoes' activeClassName="selected" style={{color:'#464547', paddingRight:"10px"}}>Shoes</NavLink>
                       </NavItem>
                       <NavItem>
-                      <NavLink to='/shop-hats' activeClassName="selected" style={{margin: '5px', color:'#464547'}}>Hats</NavLink>
+                      <NavLink to='/shop-hats' activeClassName="selected" style={{margin: '5px', color:'#464547',paddingRight:"10px"}}>Hats</NavLink>
                       </NavItem>
                       <NavItem>
-                      <NavLink to='/shop-shirts' activeClassName="selected" style={{color:'#464547'}}>Shirts</NavLink>
+                      <NavLink to='/shop-shirts' activeClassName="selected" style={{color:'#464547', paddingRight:"10px"}}>Shirts</NavLink>
                       </NavItem>
                     </Nav>
                   </Collapse>
         </Navbar>
       </div>
         {this.props.children}
-      <div className="bottom-nav-container">
+      <div className="nav-bar">
         <Navbar light toggleable>
                 <NavbarToggler right />
                 <Collapse navbar>

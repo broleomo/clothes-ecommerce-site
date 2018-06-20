@@ -4,13 +4,13 @@ import ImageSlide from "./ImageSlide";
 import couple from "../styles/images/couple_image.jpg";
 import snowyCouple from "../styles/images/snowy_couple.jpg";
 import beach from "../styles/images/beach_group.jpg";
-import walking from "../styles/images/walking_image.jpg";
+
 
 export default class Carousel extends React.Component {
     constructor (props) {
         super(props);
         this.imgUrls=[
-        couple, snowyCouple, beach, walking
+        couple, snowyCouple, beach
         ];
         this.state = {
           currentImageIndex: 0

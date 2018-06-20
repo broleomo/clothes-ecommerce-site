@@ -4,7 +4,8 @@
 }
 .nav-bar {
   display: flex;
-  background-color: black;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 35px;
 }
 
 .home-header {

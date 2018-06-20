@@ -7,7 +7,7 @@ const ImageSlide = ({ url }) => {
         backgroundPosition: 'center'
     };
     return (
-         <img className="image-slide" src={url} height="75vh" width="100%" />
+         <img className="image-slide" src={url} />
     );
   }
 
