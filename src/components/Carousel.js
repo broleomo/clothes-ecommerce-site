@@ -1,18 +1,17 @@
 import React from 'react';
 import Arrow from "./Arrow";
 import ImageSlide from "./ImageSlide";
-
-const imgUrls = [
-	"https://cmeimg-a.akamaihd.net/640/clsd/getty/c64f76dc20c246ca88ee180fe4b4b781", 
-	"https://lh3.googleusercontent.com/oxPeODS2m6rYIVbhcQChRtOWEYeGDwbeeeB1cDU2o_WYAVPU61VIgx-_6BAh5gSL8Sw=h900",
-	"https://i0.wp.com/www.universodegatos.com/wp-content/uploads/2017/04/fivfelv7.jpg?resize=582%2C328",
-	"https://i.pinimg.com/736x/07/c3/45/07c345d0eca11d0bc97c894751ba1b46.jpg",
-	"https://ehealthforum.com/health/images/avatars/11699147425707699031013.jpeg"
-];
+import couple from "../styles/images/couple_image.jpg";
+import snowyCouple from "../styles/images/snowy_couple.jpg";
+import beach from "../styles/images/beach_group.jpg";
+import walking from "../styles/images/walking_image.jpg";
 
 export default class Carousel extends React.Component {
     constructor (props) {
         super(props);
+        this.imgUrls=[
+        couple, snowyCouple, beach, walking
+        ];
         this.state = {
           currentImageIndex: 0
         };
@@ -21,7 +20,7 @@ export default class Carousel extends React.Component {
       };
      
       previousSlide () {
-        const lastIndex = imgUrls.length - 1;
+        const lastIndex = this.imgUrls.length - 1;
         const { currentImageIndex } = this.state;
         const shouldResetIndex = currentImageIndex === 0;
         const index =  shouldResetIndex ? lastIndex : currentImageIndex - 1;
@@ -32,7 +31,7 @@ export default class Carousel extends React.Component {
       }
       nextSlide () {
         const lastIndex = 
-        imgUrls.length - 1;
+        this.imgUrls.length - 1;
         const { currentImageIndex } = this.state;
         const shouldResetIndex = currentImageIndex === lastIndex;
         const index =  shouldResetIndex ? 0 : currentImageIndex + 1;
@@ -51,7 +50,7 @@ export default class Carousel extends React.Component {
           clickFunction={ this.previousSlide }
           glyph="&#9664;" />
 
-        <ImageSlide url={ imgUrls[this.state.currentImageIndex] } />
+        <ImageSlide url={ this.imgUrls[this.state.currentImageIndex] } />
 
         <Arrow
           direction="right"

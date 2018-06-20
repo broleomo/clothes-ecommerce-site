@@ -13,9 +13,9 @@ export default class BaseLayout extends Component {
     return(
       <div className="container">
         <div className="top-nav-container">
-          {/* <Navbar className="nav-bar" light toggleable>
+          <Navbar className="nav-bar" light toggleable>
                   <NavbarToggler right />
-                  <NavbarBrand href="/"><img width="40%" height="20%" className='logo' src='coolclotheslogo.png' alt="logo"/>
+                  <NavbarBrand href="/">
                   </NavbarBrand>
                   <Collapse navbar>
                     <Nav className="ml-auto" navbar>
@@ -30,15 +30,12 @@ export default class BaseLayout extends Component {
                       </NavItem>
                     </Nav>
                   </Collapse>
-        </Navbar> */}
+        </Navbar>
       </div>
         {this.props.children}
-
       <div className="bottom-nav-container">
         <Navbar light toggleable>
                 <NavbarToggler right />
-                <NavbarBrand href="/"><img width='25%' className='logo' src='coolclotheslogo.png' alt="logo"/>
-                </NavbarBrand>
                 <Collapse navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
